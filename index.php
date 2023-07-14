@@ -116,28 +116,42 @@ $api = new API();
 
 // Получение пользователей
 $users = $api->getUsers();
+echo '<pre>';
 var_dump($users);
+echo '</pre>';
 
 // Получение постов пользователя с id 1
 $userPosts = $api->getUserPosts(1);
+echo '<pre>';
 var_dump($userPosts);
+echo '</pre>';
 
 // Получение заданий пользователя с id 1
 $userTodos = $api->getUserTodos(1);
+echo '<pre>';
 var_dump($userTodos);
+echo '</pre>';
 
 // Получение поста с id 1
 $post = $api->getPost(1);
+echo '<pre>';
 var_dump($post);
+echo '</pre>';
 
 // Добавление нового поста
 $newPost = $api->addPost(1, 'New Post', 'This is a new post');
+echo '<pre>';
 var_dump($newPost);
+echo '</pre>';
 
 // Редактирование поста с id 1
 $updatedPost = $api->updatePost(1, 'Updated Post', 'This is an updated post');
+echo '<pre>';
 var_dump($updatedPost);
+echo '</pre>';
 
 // Удаление поста с id 1
 $deletedPost = $api->deletePost(1);
+echo '<pre>';
 var_dump($deletedPost);
+echo '</pre>';
