@@ -1,4 +1,4 @@
-PHP класс для работы с API https://jsonplaceholder.typicode.com
+Написать PHP класс для работы с API https://jsonplaceholder.typicode.com
 
 Сделать методы для получения пользователей, их постов и заданий
 

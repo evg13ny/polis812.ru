@@ -83,7 +83,7 @@ class API
                 'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
                 'method'  => 'PUT',
                 'content' => http_build_query($data),
-            ),
+            )
         );
 
         $context  = stream_context_create($params);
@@ -101,7 +101,7 @@ class API
             'http' => array(
                 'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
                 'method'  => 'DELETE',
-            ),
+            )
         );
 
         $context  = stream_context_create($params);
@@ -131,11 +131,11 @@ $post = $api->getPost(1);
 var_dump($post);
 
 // Добавление нового поста
-$newPost = $api->addPost(1, "New Post", "This is new post");
+$newPost = $api->addPost(1, 'New Post', 'This is a new post');
 var_dump($newPost);
 
 // Редактирование поста с id 1
-$updatedPost = $api->updatePost(1, "Updated Post", "This is updated post");
+$updatedPost = $api->updatePost(1, 'Updated Post', 'This is an updated post');
 var_dump($updatedPost);
 
 // Удаление поста с id 1
